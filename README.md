@@ -3,7 +3,6 @@ pg-schema-clone
 
 Script per clonare uno schema da un DB ad un'altro
 
-
 ===============
 Obbiettivo:
 Creare uno script python che riesca a fare download di uno schema o di una collezione di tabelle di uno schema postgres e lo spari sun un altro database.
