@@ -26,5 +26,8 @@ sudo apt-get install expect
 -------------------------------------------------------------------------------------
 
 USO:
+
 1 - settare i parametri dei db in cartella Config
+
 2 - eseguire: python dumpStart.py
+
