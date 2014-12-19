@@ -1,0 +1,25 @@
+#!/usr/bin/expect
+
+set timeout 20
+
+set db_name [lindex $argv 0]
+
+set ip [lindex $argv 1]
+
+set port [lindex $argv 2]
+
+set user [lindex $argv 3]
+
+set schema [lindex $argv 4]
+
+set nome_file_dump [lindex $argv 5]
+
+set password [lindex $argv 6]
+
+spawn pg_dump -d "$db_name" -h "$ip" -p "$port" -U "$user" -W -n "$schema" -f "$nome_file_dump"
+
+expect "Password:"
+
+send "$password\r";
+
+interact

@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+
+set timeout 20
+
+set db_name [lindex $argv 0]
+
+set ip [lindex $argv 1]
+
+set user [lindex $argv 2]
+
+set nome_file_dump [lindex $argv 3]
+
+set password [lindex $argv 4]
+
+spawn psql -U "$user" -h "$ip" -d "$db_name" -f "$nome_file_dump"
+
+expect "Password for user davide:"
+
+send "$password\r";
+
+interact
