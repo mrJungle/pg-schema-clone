@@ -23,8 +23,8 @@ Per installare Expect:
 sudo apt-get install expect
 (controllare che i file abbiano i permessi di esecuzione, altrimenti non potranno essere eseguiti.)
 
+-------------------------------------------------------------------------------------
 
 USO:
-settare i parametri dei db in cartella config
-
-eseguire: python dumpdb.py
+1 - settare i parametri dei db in cartella Config
+2 - eseguire: python dumpStart.py
